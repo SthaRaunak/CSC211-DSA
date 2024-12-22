@@ -1,4 +1,3 @@
-// simple queue using static list
 #include <iostream>
 
 #define QUEUE_SIZE 5
@@ -26,6 +25,7 @@ public:
       items[++rear] = item;
     }
   }
+
   T dequeue() {
     if (rear == -1) {
       cout << "queue is empty!" << endl;
